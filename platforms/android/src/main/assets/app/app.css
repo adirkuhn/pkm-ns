@@ -1,27 +1,19 @@
-﻿.title {
-    font-size: 30;
-    horizontal-align: center;
-    margin:20;
-}
-
-button {
-    font-size: 42;
-    horizontal-align: center;
-}
-
-.message {
-    font-size: 20;
-    color: #284848;
-    horizontal-align: center;
-}
-
-
-.move {
+﻿.move {
     font-size: 20px;
     width: 100px;
     horizontal-align: center;
     padding: 5px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 20;
     background-color: #F08030;
+    margin: 16px;
+}
+
+.question {
+    display: ;
+    float: left;
+    width: auto;
+    font-size: 20px;
+    color: 111;
+    horizontal-align: center;
 }
