@@ -1,13 +1,12 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
   <StackLayout orientation="vertical">
-    <!--<Label text="Tap the button" cssClass="title"/>
-    <Button text="TAP" tap="{{ tapAction }}" />
-    <Label text="{{ message }}" cssClass="message" textWrap="true"/>//-->
     <Label text="O tipo" cssClass="question" />
+
     <Button text="Fogo" cssClass="move" />
+
     <Label text="É FORTE contra:" cssClass="question" textWrap="true" />
 
-    <Button text="Gelo" cssClass="move" />
+    <Button text="Gelo" cssClass="move" tap="checkAnswer" />
     <Button text="Metal" cssClass="move" />
     <Button text="Luta" cssClass="move" />
     <Button text="Elétrico" cssClass="move" />
