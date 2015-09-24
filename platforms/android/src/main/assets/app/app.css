@@ -1,0 +1,27 @@
+﻿.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin:20;
+}
+
+button {
+    font-size: 42;
+    horizontal-align: center;
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+}
+
+
+.move {
+    font-size: 20px;
+    width: 100px;
+    horizontal-align: center;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #F08030;
+}

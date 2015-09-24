@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout orientation="vertical">
+    <!--<Label text="Tap the button" cssClass="title"/>
+    <Button text="TAP" tap="{{ tapAction }}" />
+    <Label text="{{ message }}" cssClass="message" textWrap="true"/>//-->
+    <Label text="Ola Mundo3" />
+    <Button text="Fogo" cssClass="move" />
+  </StackLayout>
+</Page>
