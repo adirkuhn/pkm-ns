@@ -31,6 +31,13 @@ exports.pageLoaded = function(args) {
     op4.style.backgroundColor  = mainViewModel.gData.option4.color;
 };
 
-exports.checkAnswer = function(a) {
-    //code
+exports.checkAnswer = function(obj) {
+    if (obj.button.text == mainViewModel.gData.answer) {
+        alert("Parabéns você acertou!");
+    }
+    else {
+        alert("Você ERROU!");
+    }
+
+    //load new question
 };
