@@ -1,5 +1,6 @@
 var viewModule = require("ui/core/view");
 var mainViewModel = require("../../shared/viewModels/mainViewModel.js");
+var vibrator = require("nativescript-vibrate");
 
 
 var page;
@@ -40,6 +41,7 @@ exports.checkAnswer = function(obj) {
 
     if (obj.object.text == mainViewModel.gData.answer) {
         alert("Parabéns você acertou!");
+        vibrator.vibration(500);
     }
     else {
         alert("Você ERROU!");
