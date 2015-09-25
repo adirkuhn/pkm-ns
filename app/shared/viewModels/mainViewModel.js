@@ -118,20 +118,36 @@ var getOptions = function(type) {
     return res;
 }
 
-var randomMove = getRandomMove(); 
+var getData = function() {
 
-var data = {
-    move: randomMove,
-    options: getOptions(randomMove.id)
+    var randomMove = getRandomMove();
+
+    return {
+        move: randomMove,
+        options: getOptions(randomMove.id)
+    };
 }
 
-var gData = new observableModule.Observable({
-    move: data.move,
-    option1: data.options[0],
-    option2: data.options[1],
-    option3: data.options[2],
-    option4: data.options[3],
-    answer: data.options['answer']
-});
+var getGData = function() {
+    var data = getData();
+
+    var gData = new observableModule.Observable({
+        move: data.move,
+        option1: data.options[0],
+        option2: data.options[1],
+        option3: data.options[2],
+        option4: data.options[3],
+        answer: data.options['answer']
+    });
+
+    return gData;
+}
+
+var reload = function() {
+    return getGData();
+}
+
+var gData = getGData();
 
 exports.gData = gData;
+exports.reload = reload;

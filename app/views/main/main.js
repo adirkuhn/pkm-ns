@@ -2,12 +2,11 @@ var viewModule = require("ui/core/view");
 var mainViewModel = require("../../shared/viewModels/mainViewModel.js");
 
 
-var move;
+var page;
 
-exports.pageLoaded = function(args) {
-    var page = args.object;
-    
-    debugger;
+
+var loadQuestion = function() {
+    var move;
     //move
     move = viewModule.getViewById(page, "move");
     move.text = mainViewModel.gData.move.move.name;
@@ -29,10 +28,17 @@ exports.pageLoaded = function(args) {
     op4 = viewModule.getViewById(page, "op4");
     op4.text = mainViewModel.gData.option4.name;
     op4.style.backgroundColor  = mainViewModel.gData.option4.color;
+}
+
+exports.pageLoaded = function(args) {
+    page = args.object;
+
+    loadQuestion();
 };
 
 exports.checkAnswer = function(obj) {
-    if (obj.button.text == mainViewModel.gData.answer) {
+
+    if (obj.object.text == mainViewModel.gData.answer) {
         alert("Parabéns você acertou!");
     }
     else {
@@ -40,4 +46,8 @@ exports.checkAnswer = function(obj) {
     }
 
     //load new question
+    mainViewModel.gData = mainViewModel.reload();
+
+    debugger;
+    loadQuestion();
 };
