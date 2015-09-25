@@ -48,6 +48,5 @@ exports.checkAnswer = function(obj) {
     //load new question
     mainViewModel.gData = mainViewModel.reload();
 
-    debugger;
     loadQuestion();
 };
