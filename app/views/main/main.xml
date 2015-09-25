@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout orientation="vertical">
+    <Label text="O tipo" cssClass="question" />
+
+    <Button id="move" text="" cssClass="move" />
+
+    <Label text="É FORTE contra:" cssClass="question" textWrap="true" />
+
+    <Button id="op1" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op2" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op3" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op4" text="" cssClass="move" tap="checkAnswer" />
+  </StackLayout>
+</Page>

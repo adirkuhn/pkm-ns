@@ -1,11 +1,13 @@
 ﻿.move {
     font-size: 20px;
-    width: 100px;
+    font-weight: bold;
+    color: white;
+    width: 250px;
     horizontal-align: center;
     padding: 5px;
     text-align: center;
     border-radius: 20;
-    background-color: #F08030;
+    border-color: #000;
     margin: 16px;
 }
 
