@@ -70,7 +70,7 @@ var getRandomMove = function() {
 var getStrongAgainst = function(type) {
     var len = strongAgainst[type].length;
     var i = Math.floor(Math.random() * len);
-    return strongAgainst[i];
+    return strongAgainst[type][i];
 }
 
 var getWeaksAgaints = function(type) {
@@ -92,10 +92,10 @@ var getOptions = function(type) {
 
     //get strong
     var strong = getStrongAgainst(type);
-    var asnwer = moves[strong].name
+    var answer = moves[strong].name
 
     ops[0] = {
-        'name': asnwer,
+        'name': answer,
         'color': moves[strong].color,
     };
 
@@ -109,14 +109,20 @@ var getOptions = function(type) {
         }
     }
 
-    return ops.sort(function() {
+    var res = ops.sort(function() {
         return .5 - Math.random();
     });
+
+    res['answer'] = answer;
+
+    return res;
 }
 
+var randomMove = getRandomMove(); 
+
 var data = {
-    move: getRandomMove(),
-    options: getOptions(move.id);
+    move: randomMove,
+    options: getOptions(randomMove.id)
 }
 
 var gData = new observableModule.Observable({
@@ -124,7 +130,8 @@ var gData = new observableModule.Observable({
     option1: data.options[0],
     option2: data.options[1],
     option3: data.options[2],
-    option4: data.options[3]
+    option4: data.options[3],
+    answer: data.options['answer']
 });
 
 exports.gData = gData;
