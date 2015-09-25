@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout orientation="vertical">
+    <Label text="O tipo" cssClass="question" />
+
+    <Button text="{{ move }}" cssClass="move" />
+
+    <Label text="É FORTE contra:" cssClass="question" textWrap="true" />
+
+    <Button text="{{ option1 }}" cssClass="move" tap="checkAnswer" />
+    <Button text="{{ option2 }}" cssClass="move" />
+    <Button text="{{ option3 }}" cssClass="move" />
+    <Button text="{{ option4 }}" cssClass="move" />
+  </StackLayout>
+</Page>
