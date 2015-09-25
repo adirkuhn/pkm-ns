@@ -6,9 +6,9 @@
 
     <Label text="É FORTE contra:" cssClass="question" textWrap="true" />
 
-    <Button text="{{ option1 }}" cssClass="move" tap="checkAnswer" />
-    <Button text="{{ option2 }}" cssClass="move" />
-    <Button text="{{ option3 }}" cssClass="move" />
-    <Button text="{{ option4 }}" cssClass="move" />
+    <Button id="op1" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op2" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op3" text="" cssClass="move" tap="checkAnswer" />
+    <Button id="op4" text="" cssClass="move" tap="checkAnswer" />
   </StackLayout>
 </Page>
