@@ -1,19 +1,17 @@
-var observableModule = require("data/observable");
+var viewModule = require("ui/core/view");
+var mainViewModel = require("../../shared/viewModels/mainViewModel.js");
 
-var gData = new observableModule.Observable({
-    move: 'Fogo',
-    option1: 'Agua',
-    option2: 'Gelo',
-    option3: 'Vento',
-    option4: 'Grama'
-});
+
+var move;
 
 exports.pageLoaded = function(args) {
     var page = args.object;
-    page.bindingContext = gData;
+    
+    move = viewModule.getViewById(page, "move");
+    move.text = mainViewModel.gData.move.name;
+    move.style.backgroundColor  = mainViewModel.gData.move.color;
 };
 
 exports.checkAnswer = function(a) {
-    console.log(a);
-    alert("Oi ");
+    //code
 };

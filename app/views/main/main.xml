@@ -2,7 +2,7 @@
   <StackLayout orientation="vertical">
     <Label text="O tipo" cssClass="question" />
 
-    <Button text="{{ move }}" cssClass="move" />
+    <Button id="move" text="" cssClass="move" />
 
     <Label text="É FORTE contra:" cssClass="question" textWrap="true" />
 
