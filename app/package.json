@@ -1,26 +1,21 @@
 {
-	"name": "tns-template-hello-world",
+	"name": "pkm-ns",
 	"main": "app.js",
 	"jsoptions": "--expose_gc",
-	"version": "1.3.0",
-	"author": "Telerik <support@telerik.com>",
-	"description": "Nativescript hello-world project template",
+	"version": "0.1",
+	"author": "Adir Kuhn <adirkuhn@gmail.com>",
+	"description": "Pokemon type quiz",
 	"license": "BSD",
 	"keywords": [
-		"telerik",
-		"mobile",
-		"nativescript",
-		"{N}",
-		"tns",
-		"appbuilder",
-		"template"
+		"pokemon",
+		"quiz"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/NativeScript/template-hello-world.git"
+		"url": "git@github.com:adirkuhn/pkm-ns.git"
 	},
 	"bugs": {
-		"url": "https://github.com/NativeScript/template-hello-world/issues"
+		"url": "https://github.com/adirkuhn/pkm-ns"
 	},
-	"homepage": "https://github.com/NativeScript/template-hello-world"
+	"homepage": "https://github.com/adirkuhn/pkm-ns"
 }
